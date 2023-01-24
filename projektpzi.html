@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Turistička agencija</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+
+    <a href="#" class="logo"><span>Bez</span> Granica</a>
+    <nav class="traka">
+        <a href="#početna">POČETNA</a>
+        <a href="#rezervacije">REZERVACIJA</a>
+        <a href="#ponuda">PONUDA</a>
+        <a href="#usluge">USLUGE</a>
+        <a href="#recenzije">RECENZIJE</a>
+        <a href="#urednici">VODITELJI STRANICE</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+</header>
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>Prijavite se</h3>
+        <input type="email" class="box" placeholder="unesite Vaš email">
+        <input type="password" class="box" placeholder="unesite Vašu šifru">
+        <input type="submit" value="Potvrdi" class="btn">
+        <input type="checkbox" id="upamti">
+        <label for="upamti">Spremi podatke</label>
+    </form>
+</div>
+
+<!---naslovnica-->
+<section class="početna" id="početna">
+    <div class="content">
+        <h3>Živimo Život </br> "BEZ GRANICA"</h3>
+        <p>Vrijeme je za putovanje!</p>
+    </div>
+
+    <div class="controls">
+        <span class="video-btn" data-src="slike/Sunset Over Beautiful Pier With Sky Background Loop (No Copyright).mp4"></span>
+        <span class="video-btn active" data-src="slike/Website Video Background - w_o writing a line of HTML, jQuery, CSS code!.mp4"></span>
+        <span class="video-btn" data-src="slike/(4K_UHD)Sunset On Sea loop Free To Use (No Copyright).mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="slike/Sunset Over Beautiful Pier With Sky Background Loop (No Copyright).mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<!---rezervacije-->
+<section class="rezervacije" id="rezervacije">
+    <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>Z</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>R</span>
+        <span>A</span>
+        <span>J</span>
+        <span class="space"> </span>
+        <span>O</span>
+        <span>D</span>
+        <span>M</span>
+        <span>A</span>
+        <span>H</span>
+    </h1>
+    <div class="row">
+        <div class="slika">
+            <img src="slike/slikaosobe.jpg" alt="">
+        </div>
+        <form action="">
+            <div class="unos">
+                <h3>Odaberi mjesto</h3>
+                <input type="text" placeholder="Unesite naziv destinacije">
+            </div>
+            <div class="unos">
+                <h3>Broj osoba</h3>
+                <input type="number" placeholder="Unesite broj osoba">
+            </div>
+            <div class="unos">
+                <h3>Datum polaska</h3>
+                <input type="date" placeholder="Unesite datum polaska">
+            </div>
+            <div class="unos">
+                <h3>Datum povratka</h3>
+                <input type="date" placeholder="Unesite datum povratka">
+            </div>
+            <input type="Potvrdi" class="btn" value="rezerviraj odmah">
+        </form>
+    </div>
+</section>
+
+<!---ponudaa-->
+<section class="ponuda" id="ponuda">
+    <h1 class="heading">
+        <span>P</span>
+        <span>O</span>
+        <span>N</span>
+        <span>U</span>
+        <span>D</span>
+        <span>A</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="slike/MADRID.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Madrid</h3>
+                <p>Madrid je jedan od onih gradova u kojima se naglašeno sudaraju tradicionalno i moderno. Hodajući po njegovim ulicama primjetiti ćete kako se često izmjenjuju povijesne znamenitosti i poslovnezgrade. To ćete lako doživjeti ako prijeđete put od Plata de Espana do Plaza de Cibeles.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="cijena">KM 600.00 <span> KM 671.00</span></div>
+                <a href="#" class="btn">Rezerviraj odmah</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="slike/Moskva-ICT-Putovanja.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Moskva</h3>
+                <p>Glavni i najveći grad Rusije, na obalama rijeke Moskve po kojoj je i dobio ime. Ukupno 49 mostova na gradskom teritoriju povezuje dvije obale ove rijeke. Moskva nosi epitet najzelenije prijestolnice na svjetu. U Moskvi ćete sigurno vidjeti nešto što će Vas oduševiti. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="cijena">KM 527.00 <span> KM 580.00</span></div>
+                <a href="#" class="btn">Rezerviraj odmah</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="slike/tower-bridge-london-uk-38138737.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> London</h3>
+                <p>Kao jedna od vodećih turističkih destinacija, London privlači više od 15 milijuna posjetitelja svake godine. Glavni grad Velike Britanije je ujedno i središte kulture, umjetnosti i glazbe. London je veličanstveno mjesto prepun nevjerovatnih atrakcija.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="cijena">KM 400.00<span> KM 445.00</span></div>
+                <a href="#" class="btn">Rezerviraj odmah</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="slike/cappadocia-turkey-travel-guide.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Cappadocia</h3>
+                <p>Cappadocia je čarobna regija vrtloga vulkanskog kamenja. Cijela pokrajina prepuna je građevina ukledanih u stijene u kojima su ljudi prije živjeli. Jedan od zaštitnih znakova Cappadocije je svakako vožnja balonom. Dođite i doživite nezaboravno iskustvo.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="cijena"> KM 650.00 <span> KM 690.00</span></div>
+                <a href="#" class="btn">Rezerviraj odmah</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="slike/preuzmi (1).jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Dubai</h3>
+                <p>Dubai-grad raskoši,zlata i dijamanata. Jedan dan u gradu budućnosti pamti se cijeli život. Umjetni otoci, najviša zgradana svijetu i skijanje ured pustinje zovu u Dubai, no prijeputa,osim vize,važno je upamtiti da vrijede drugačija pravila odjevanja.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="cijena"> KM 800.00 <span> KM 920.00</span></div>
+                <a href="#" class="btn">Rezerviraj odmah</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="slike/preuzmi.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Havana</h3>
+                <p>Najveći grad,najveća luka i vodeći trgovački centar Kube, jedan od najlješih karipskih gradova. Havana privlači ljubitelje uzbuđenja iz cijeloga svijeta. Noću grad ne spava,ulice su pune hodanja. Glazba se ne zaustavlja, a kubanski rum teče poput rijeke.  </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="cijena"> KM 1120.00 <span> KM 1425.00</span></div>
+                <a href="#" class="btn">Rezerviraj odmah</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---usluge-->
+<section class="usluge" id="usluge">
+    <h1 class="heading">
+        <span>U</span>
+        <span>S</span>
+        <span>L</span>
+        <span>U</span>
+        <span>G</span>
+        <span>E</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+        <i class="fas fa-hotel"></i>
+        <h3>Hoteli</h3>
+        <p>Ukoliko ne znate koji hotel odabrati,agencija ima ponudu najboljih hotela na odabranim lokacijama.</p>
+        </div>
+        <div class="box">
+        <i class="fas fa-passport"></i>
+        <h3>Vize</h3>
+        <p>Problemi s vizama za određene zemlje su stvar prošlosti. Nudimo Vam usluge rješavanja viza za odabrano putovanje ukoliko su potrebne.</p>
+        </div>
+        <div class="box">
+        <i class="fas fa-utensils"></i>
+        <h3>Hrana i piće</h3>
+        <p>Agencija nudi velik izbor restorana i pića u kojima možete uživati i provesti ugodno vrijeme nakon razgledanja lokacije.</p>
+        </div>
+        <div class="box">
+        <i class="fas fa-book-medical"></i>
+        <h3>Putno osiguranje</h3>
+        <p>Uz nas budite sigurni osigurani na svakom putovanju. Usluge zdravstvenog osiguranja uvijek su dobra ponuda.</p>
+        </div>
+        <div class="box">
+        <i class="fas fa-car"></i>
+        <h3>Najam automobila</h3>
+        <p>Ukoliko niste ljubitelji gradskih prijevoza na Vašem putovanju, ponuda najma automobila uvijek je dobar izbor.</p>
+        </div>
+        <div class="box">
+        <i class="fas fa-umbrella-beach"></i>
+        <h3>Izleti</h3>
+        <p>Ukoliko ne znate koje atrakcije odabranog grada posijetiti nudimo Vam brojne fakultativne izlete kojima ne ćete biti razočarani.</p>
+        </div>
+    </div>
+</section>
+<!--recenzije-->
+<section class="recenzije" id="recenzije">
+    <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>C</span>
+        <span>E</span>
+        <span>N</span>
+        <span>Z</span>
+        <span>I</span>
+        <span>J</span>
+        <span>E</span>
+    </h1>
+    <div class="review-slider">
+        <div class="swiper-wrapper">
+            <div class="slider">
+                <div class="box">
+                    <img src="slike/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="">
+                    <h3>Jelena Begić</h3>
+                    <p>Najbolji!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="box">
+                <img src="slike/albert-dera-ILip77SbmOE-unsplash.jpg" alt="">
+                <h3>Albert Dera</h3>
+                <p>Nezaboravno iskustvo putovanja!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="box">
+                <img src="slike/edward-cisneros-_H6wpor9mjs-unsplash.jpg" alt="">
+                <h3>Marija Kovačević</h3>
+                <p>Za putovanja uvijek biram agenciju "Bez Granica".</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="box">
+                <img src="slike/brooke-cagle-YnjmBvkYFgc-unsplash.jpg" alt="">
+                <h3>Barbara Petrović</h3>
+                <p>Najbolja usluga.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="box">
+                <img src="slike/ana-nichita-BI91NrppE38-unsplash.jpg" alt="">
+                <h3>Antonio Horvat</h3>
+                <p>Najbolji!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---urednici--->
+<section class="urednici" id="urednici">
+    <h1 class="heading">
+        <span>O</span>
+        <span class="space"> </span>
+        <span>N</span>
+        <span>A</span>
+        <span>M</span>
+        <span>A</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="slike/IMG-20230110-WA0004.jpg" alt="">
+            <div class="content">
+                <h3><i class="slika"></i>Josipa Čolak</h3>
+                <p>Dolazim iz Širokog Brijega.</br> Imam 21 godinu. </br> Studentica sam treće godine studija Matematika-informatika.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="slike/IMG_6630 A.jpg" alt="">
+            <div class="content">
+                <h3><i class="slika"></i>Katarina Budimir</h3>
+                <p>Dolazim iz Posušja.</br> Imam 21 godinu. </br> Studentica sam treće godine studija Matematika-informatika.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--dno-->
+<section class="footer">
+    <div class="icons">
+        <p>Pronaći nas možete i na:</p>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fa fa-instagram"></i>    
+    </div>
+   
+</section>
+
+
+<script src="java/java.js"></script>
+
+</body>
+</html>
