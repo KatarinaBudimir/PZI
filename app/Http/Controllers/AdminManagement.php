@@ -190,7 +190,7 @@ class AdminManagement extends Controller
 
     function userTripRating(Request $request)
     {
-        $tripUserId = $request->query('trip_id');
+        $tripUserId = $request->query('trip_user_id');
         $tripUser = TripUser::where('id', $tripUserId)->first();
         $trip = DB::table('trips')->where('id', $tripUser->trip_id)->first();
         $tripUser->destinationName = DB::table('destinations')->where('id', $trip->destination_id)->first()->name;

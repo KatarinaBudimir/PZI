@@ -8,16 +8,16 @@
             <a href="#usluge">USLUGE</a>
             <a href="#recenzije">RECENZIJE</a>
             <a href="{{route('trip.list')}}">LISTA SVIH PUTOVANJA</a>
+            <a href="#urednici">VODITELJI STRANICE</a>
         @endif
         @auth
             @isset($role)
                 @if($role === "admin")
-                        <a href="{{route('destination.dashboard')}}">DESTINACIJE</a>
+                    <a href="{{route('destination.dashboard')}}">DESTINACIJE</a>
                 @endif
             @endisset
             <a href="{{route('logout')}}">LOGOUT({{auth()->user()->name}})</a>
         @else
-            <a href="#urednici">VODITELJI STRANICE</a>
             <a href="{{route('login')}}">LOGIN</a>
             <a href="{{route('registration')}}">REGISTRACIJA</a>
         @endauth

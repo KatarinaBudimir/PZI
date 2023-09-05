@@ -8,6 +8,7 @@
                 <div class="col-1">ID Putovanja</div>
                 <div class="col-1">Korisnik(ID)</div>
                 <div class="col-1">Broj mjesta</div>
+                <div class="col-1">Ostavi rating</div>
                 <div class="col-1">Podatci o rezervaciji</div>
                 <div class="col-1"></div>
             </li>
@@ -15,7 +16,7 @@
                 <form action="{{route('trip.reserve.delete')}}" method="post">
                     @csrf
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div class="col-1">ID Putovanja: {{$reservation->trip_id}}</div>
+                        <div class="col-1">ID Putovanja: {{$reservation->id}}</div>
                         <div class="col-1"><strong>{{$reservation->userName}}</strong>({{$reservation->user_id}})</div>
                         <p>Ukupan broj mjesta: <span
                                 class="badge justify-content-end bg-primary rounded-pill">{{$reservation->spots}}</span>
@@ -31,7 +32,7 @@
                         <input type="hidden" name="trip_id" value="{{$reservation->id}}"/>
                         @if($role !== 'admin')
                             <div class="col-1"><a
-                                    href="{{ route('user.trip.rating') }}?trip_id={{ $reservation->trip_id }}">Ostavi
+                                    href="{{ route('user.trip.rating') }}?trip_user_id={{ $reservation->id }}">Ostavi
                                     rating!</a></div>
                         @endif
                         <button type="submit" class="btn btn-danger">Ukloni rezervaciju</button>
